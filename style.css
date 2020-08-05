@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #183153;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #001c40;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+}
+h1{
+    color: #ffd43b;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    margin-left: 14%;
+}
+.navbar{
+    width: 66%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.nav-link{
+    margin-right: 45px;
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+.nav-link:hover{
+    color: #ffd43b;
+    text-decoration: underline;
+}
+/* toggle button */
+.menu-toggle{
+    width: 4%;
+    color: #ffd43b;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    left: 88%;
+    display: none;
+} 
+/* The responsiveness for mobile and tablet devices */
+@media (max-width: 650px){
+    .menu-toggle{
+        display: block;
+    }
+    h1{
+        font-size: 25px;
+        margin-left: 35%;
+        text-align: center;
+    }
+    /* This class is not in our html, we will add it in javascript. */
+    .active{
+        width: 100%;
+        height: 300px;
+        background:#ffd43b;
+        position: absolute;
+        top: -100%;
+        display: block;
+        z-index: 1;
+        border: 2px solid #000;
+        transition: .4s ease-in-out;
+        padding: 31px 0;
+    }
+    .nav-link{
+        text-align: center;
+        display: block;
+        margin: 25px 0;
+        color: #001c40;
+        font-size: 21px;
+    }
+    .nav-link:hover{
+        color: #001c40;
+        text-decoration: underline;
+    }
+
+}
