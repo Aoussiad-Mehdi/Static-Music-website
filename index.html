@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
+    <title>MH Music</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Capture.JPG">
     <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/e391ce7786.js" crossorigin="anonymous"></script>
 </head>
@@ -24,10 +25,10 @@
         </div>
         <!--Navbar-->
         <nav class="navbar">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Services</a>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#About" class="nav-link" onclick="navigation()">About</a>
+            <a href="#" class="nav-link" onclick="navigation()">Services</a>
+            <a href="#" class="nav-link" onclick="navigation()">Contact</a>
         </nav>
     </header>
 
@@ -44,6 +45,23 @@
             </p>
             <button class="Homebtn">Get It in Touch</button>
             </div>
+    </section>
+    <!--About Section-->
+    <section class="About" id="About">
+        <h1 class="Aboutitle">About us</h1>
+        <div class="Aboutcontent">
+            <div class="txtcontent">
+            <h4 id="txt">ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam cumque quisquam fugiat dignissimos impedit officia perspiciatis quam similique distinctio iure!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eveniet?
+            </h4>
+           </div>
+            <div class="image">
+                <img class="pic" src="Images/pic.jpeg" alt="studio">
+            </div>
+        </div>
+        
     </section>
 </body>
 </html>

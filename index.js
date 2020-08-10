@@ -1,7 +1,6 @@
 // toggle buttoin functionality.
 const navbar = document.querySelector('.navbar');
 const icon = document.querySelector('#icon');
-const newNavbar = document.querySelector('.active');
 //adding a class to the navbar.
 function addClass(){
     navbar.classList.toggle('active');
@@ -12,4 +11,10 @@ function addClass(){
     else{
         icon.className = 'fas fa-bars';
     }
+}
+
+// This removes the mobile navbar when you click on links.
+function navigation(){
+    navbar.classList.remove('active');
+    icon.className = 'fas fa-bars';
 }

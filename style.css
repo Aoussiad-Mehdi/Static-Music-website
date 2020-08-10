@@ -25,6 +25,7 @@ header{
     align-items: center;
     top: 0;
     position: sticky;
+    z-index: 1;
 }
 .logoIcon{
     width: 5%;
@@ -102,7 +103,7 @@ h1{
         z-index: 1;
         border: 2px solid #000;
         transition: .4s ease-in-out;
-        padding: 31px 0;
+        padding: 11px 0;
     }
     .active .nav-link{
         text-align: center;
@@ -128,10 +129,10 @@ h1{
 }
 .content{
     width: 100%;
-    height: 320px;
+    height: 290px;
     display: flex;
     justify-content: center;
-    margin-bottom: 30%;
+    margin-bottom: 35%;
 }
 .title{
     color: #ffd43b;
@@ -146,14 +147,14 @@ h1{
     width: 50%;
     height: 200px;
     position: absolute;
-    top: 43%;
+    top: 48%;
     left: 6%;
-    padding: 1%; 
+    padding: 1%;
 }
 p{
     color: white;
     font-size: 16px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     z-index: -1;
 }
 .Homebtn{
@@ -182,10 +183,10 @@ p{
         top: 50%;
     }
 }
-@media (min-width: 1465px){
+@media (min-width: 1450px){
     .text{
         left: 6%;
-        top: 47%;
+        top: 49%;
     }
 }
 @media (min-width: 1520px){
@@ -200,6 +201,9 @@ p{
         font-size: 50px;
         padding-left: 20px;
     }
+    .text{
+        top: 40%;
+    }
 }
 @media (max-width: 651px){
     .title{
@@ -212,11 +216,110 @@ p{
     }
 }
 @media (max-width: 510px){
+    
     .text{
         width: 100%;
+        margin-right: 10%;
+        top: 35%;
+        width: 100%;
+        left: 0;
     }
     p{
-        padding-right: 160px;
+        padding-right: 110px;
+    }
+    .Homebtn{
+        margin-top: 25px;
     }
 }
+@media (max-width:380px){
+    .text{
+        top: 45%;
+    }
+}
+/* About Section */
+.About{
+    width: 100%;
+    height: 450px;
+}
+.Aboutitle{
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 3%;
+    color: white;
+    font-family: sans-serif;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+.Aboutcontent{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.txtcontent{
+    background: #ffd43b;
+    height: 250px;
+    margin-top: 3%;
+    margin: 20px;
+    border-radius: 10px;
+}
+#txt{
+    color: #001c40;
+    padding: 20px 40px;
+    font-size: 17px;
+    padding-top: 40px;
+}
+#txt::selection{
+    color: #ffd43b;
+    background: #001c40;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 25px;
+    background: #ffd43b;
+    border-radius: 10px;
+}
+.pic{
+    width: 39%;
+    height: 210px;
+    border-radius: 50%;
+    border: 4px solid #001c40;  
+}
+/* Media querries for the about section */
+@media (min-width:1200px){
+    #txt{
+        padding-top: 75px;
+    }
+}
+@media (max-width:800px){
+    #txt{
+        padding-top: 8px;
+    }
+    .pic{
+        width: 55%;
+    }
+}
+@media (max-width:700px){
+    .Aboutcontent{
+        grid-template-columns: 1fr;
+    }
+    #txt{
+        padding-top: 30px;
+    }
+    .pic{
+        height: 150px;
+        padding: 10px;
+        border: none;
+    }
+}
+@media (max-width:650px){
+    .Aboutitle{
+        text-align: center;
+        margin-right: 29%;
+    }
+}
+
 
