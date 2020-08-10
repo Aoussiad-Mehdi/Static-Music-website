@@ -15,6 +15,7 @@ body{
     width: 100%;
     height: 100%;
     background: #001c40;
+    overflow-x: hidden;
 }
 header{
     width: 100%;
@@ -39,12 +40,17 @@ header{
     align-items: center;
     justify-content: center;
     margin-left: 5%;
+    transition: .5s ease;
 }
 #music-icon{
     font-size: 35px;
     color: #ffd43b;
-    
+    transition: .4s ease; 
 }
+.logoIcon:hover{
+    transform: rotate(360deg);
+}
+
 .logo{
     width: 15%;
 }
@@ -107,11 +113,10 @@ h1{
         background:#ffd43b;
         position: absolute;
         top: 80px;
-        right: 0%;
+        right: 0;
         display: block;
         z-index: 1;
         border: 2px solid #000;
-        transition: .4s ease-in-out;
         padding: 11px 0;
     }
     .active .nav-link{
