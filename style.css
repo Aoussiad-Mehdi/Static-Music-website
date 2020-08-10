@@ -7,10 +7,14 @@
 html{
     scroll-behavior: smooth;
 }
+::selection{
+    background: #ffd43b;
+    color: #001c40;
+}
 body{
     width: 100%;
     height: 100%;
-    background: #183153;
+    background: #001c40;
 }
 header{
     width: 100%;
@@ -19,22 +23,36 @@ header{
     border-bottom: 1px solid #000;
     display: flex;
     align-items: center;
+    top: 0;
+    position: sticky;
+}
+.logoIcon{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+#music-icon{
+    font-size: 35px;
+    color: #ffd43b;
+    
 }
 .logo{
-    width: 30%;
+    width: 15%;
 }
 h1{
     color: #ffd43b;
     font-family: sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     font-style: italic;
-    margin-left: 14%;
+    margin-left: 5%;
 }
 .navbar{
-    width: 66%;
+    width: 56%;
     display: flex;
     justify-content: flex-end;
-    margin-right: 5%;
+    margin-left: 11%;
     transition: .3s ease-in-out;
 }
 .nav-link{
@@ -75,11 +93,11 @@ h1{
     /* This class is not in our html, we will add it in javascript. */
     .active{
         width: 100%;
-        height: 300px;
+        height: 210px;
         background:#ffd43b;
         position: absolute;
         top: 80px;
-        right: -5%;
+        right: 0%;
         display: block;
         z-index: 1;
         border: 2px solid #000;
@@ -89,7 +107,7 @@ h1{
     .active .nav-link{
         text-align: center;
         display: block;
-        margin: 25px 0;
+        margin: 15px 0;
         color: #001c40;
         font-size: 21px;
     }
@@ -97,5 +115,108 @@ h1{
         color: #001c40;
         text-decoration: underline;
     }
-
 }
+/* Home Section */
+.Home{
+    width: 100%;
+    height: 40rem;
+    background-image: url(Images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 1px solid #000;
+}
+.content{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30%;
+}
+.title{
+    color: #ffd43b;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    padding-top: 5%;
+    padding-left: 2%;    
+}
+.text{
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    top: 43%;
+    left: 6%;
+    padding: 1%; 
+}
+p{
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    z-index: -1;
+}
+.Homebtn{
+    padding: 16px 31px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: #ffd43b;
+    color: #001c40;
+    transition: .4s ease;
+    margin-top: 70px;
+}
+.Homebtn:hover{
+    background: #001c40;
+    color: #ffd43b;
+    border: 1px solid white;
+}
+/* some media querries for handling the responsiveness */
+@media (min-width: 1200px){
+    .title{
+        padding-left: 1%;
+    }
+    .text{
+        left: 6%;
+        top: 50%;
+    }
+}
+@media (min-width: 1465px){
+    .text{
+        left: 6%;
+        top: 47%;
+    }
+}
+@media (min-width: 1520px){
+    .text{
+        left:10%;
+        top: 47%;
+    }
+}
+/* for tablets and mobile devices */
+@media (max-width: 850px){
+    .title{
+        font-size: 50px;
+        padding-left: 20px;
+    }
+}
+@media (max-width: 651px){
+    .title{
+        font-size: 40px;
+        padding: 40px;
+        margin-right: 33%;
+    }
+    .text{
+        margin-left: 20%;
+    }
+}
+@media (max-width: 510px){
+    .text{
+        width: 100%;
+    }
+    p{
+        padding-right: 160px;
+    }
+}
+
