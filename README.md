@@ -1,3 +1,3 @@
-# Responsive-Navbar.
-This is a Responsive Navbar using HTML CSS and JS.
-You can check it out here : https://codepen.io/MehdiAoussiad/full/zYqYjZq
+# Music Website.
+This is a Responsive static website using HTML CSS and JS.
+New features coming soon.
