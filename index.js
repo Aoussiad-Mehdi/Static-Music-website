@@ -13,7 +13,7 @@ function addClass(){
     }
 }
 
-// This removes the mobile navbar when you click on links.
+// This removes the mobile navbar when you click on mobile navlinks.
 function navigation(){
     navbar.classList.remove('active');
     icon.className = 'fas fa-bars';

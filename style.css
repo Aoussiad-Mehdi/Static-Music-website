@@ -139,7 +139,7 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000; 
 }
 .content{
     width: 100%;
@@ -289,7 +289,12 @@ p{
     height: 250px;
     margin-top: 3%;
     margin: 20px;
+    margin-left: 20px;
     border-radius: 10px;
+}
+.pragraph{
+    animation: animate 3.8s;
+    transition: .4s ease;
 }
 #txt{
     color: #001c40;
@@ -309,14 +314,30 @@ p{
     align-items: center;
     justify-content: center;
     margin: 20px 25px;
-    border-radius: 10px;
-
+    transition: .5s ease;
+}
+/* animation for the About section */
+.paragraph{
+    animation: animate 4s;
+    transition: .4s ease;
+}
+.studio{
+    animation: animate 4s;
+    transition: .4s ease;
+}
+@keyframes animate{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .pic{
     width: 49%;
     height: 260px;
     border-radius: 50%;
-    border: 4px solid #ffd43b;;  
+    border: 4px solid #ffd43b; 
 }
 /* Media querries for the about section */
 @media (min-width:1200px){
@@ -325,6 +346,9 @@ p{
     }
 }
 @media (max-width:800px){
+    .About{
+        height: 580px;
+    }
     #txt{
         padding-top: 8px;
     }
@@ -350,6 +374,77 @@ p{
         text-align: center;
         margin-right: 29%;
     }
+}
+
+/* services section */
+.container{
+    width: 100%;
+    height: 500px;
+    background: #001c40;
+}
+#titreh1{
+    color: #ffd43b;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 800;
+}
+.services{
+    width: 100%;
+    height: 480px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-top: 1%;
+}
+.service{
+    height: 80%;
+    margin: 0 40px;
+    padding-bottom: 15%;
+    border-radius: 7px;
+    transition: .4s linear;
+    background: #fff;   
+}
+.service:hover{
+    background: #ffd43b;
+}
+.picture{
+    width: 70%; 
+    height: 70%;
+    padding: 5%;
+}
+.servicetext{
+    height: 30%;
+    padding: 5% 15%;
+}
+#servimg{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 25%;
+    border: #001c40 solid 3px;   
+}
+.servicetext{
+    text-align: center;
+}
+#titre{
+    color: #001c40;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-size: 27px;
+}
+#titre::selection{
+    color: #ffd43b;
+    background: #001c40;
+}
+#serviceparagraph{
+    color: #001c40;
+    margin-bottom: 2%;
+}
+#serviceparagraph::selection{
+    color: #ffd43b;
+    background: #001c40;
 }
 
 

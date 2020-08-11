@@ -26,8 +26,8 @@
         <!--Navbar-->
         <nav class="navbar">
             <a href="index.html" class="nav-link">Home</a>
-            <a href="#About" class="nav-link" onclick="navigation()">About</a>
-            <a href="#" class="nav-link" onclick="navigation()">Services</a>
+            <a href="#About" class="nav-link" onclick="navigation(),animate()">About</a>
+            <a href="#services" class="nav-link" onclick="navigation()">Services</a>
             <a href="#" class="nav-link" onclick="navigation()">Contact</a>
         </nav>
     </header>
@@ -43,24 +43,72 @@
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus.
              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eveniet?
             </p>
-            <button class="Homebtn">Get It in Touch</button>
+            <a href="#services"><button class="Homebtn">Get It in Touch</button></a>
             </div>
     </section>
+
     <!--About Section-->
     <section class="About" id="About">
-        <h1 class="Aboutitle">About us</h1>
+        <h1 class="Aboutitle paragraph">About us</h1>
         <div class="Aboutcontent">
-            <div class="txtcontent">
+            <div class="txtcontent paragraph">
             <h4 id="txt">ipsum dolor sit amet consectetur adipisicing elit.
                 Quibusdam cumque quisquam fugiat dignissimos impedit officia perspiciatis quam similique distinctio iure!
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, delectus.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, eveniet?
             </h4>
            </div>
-            <div class="image">
+            <div class="image studio">
                 <img class="pic" src="Images/pic.jpeg" alt="studio">
             </div>
         </div>
     </section>
+
+    <!--Services Section-->
+    <div class="container">
+        <h1 id="titreh1">Services</h1>
+    
+    <section id="services" class="services" id="services">
+        <div class="service">
+            <div class="picture">
+                <img id="servimg" src="Images/production.jpeg" alt="">
+            </div>
+            <div class="servicetext">
+                <h1 id="titre">Music Production</h1>
+                <p id="serviceparagraph">
+                    Lorem ipsum dolor sit amet consectetur,
+                     ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="picture">
+                <img id="servimg" src="Images/recording.jpeg" alt="">
+            </div>
+            <div class="servicetext">
+                <h1 id="titre">Music Recording</h1>
+                <p id="serviceparagraph">
+                    Lorem ipsum dolor sit amet consectetur,
+                     ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+
+        <div class="service">
+            <div class="picture">
+                <img id="servimg" src="Images/talent.jpeg" alt="">
+            </div>
+            <div class="servicetext">
+                <h1 id="titre">Talent marketing</h1>
+                <p id="serviceparagraph">
+                    Lorem ipsum dolor sit amet consectetur,
+                     ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+
 </body>
 </html>
