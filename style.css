@@ -117,7 +117,7 @@ h1{
         display: block;
         z-index: 1;
         border: 2px solid #000;
-        padding: 11px 0;
+        padding: 1px 0;
     }
     .active .nav-link{
         text-align: center;
@@ -446,5 +446,6 @@ p{
     color: #ffd43b;
     background: #001c40;
 }
+
 
 
