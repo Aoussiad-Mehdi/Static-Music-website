@@ -515,6 +515,10 @@ p{
     border-radius: 20px;
     padding: 2%;
 }
+#email::selection{
+    background: #001c40;
+    color: #ffd43b;
+}
 #showemail{
     padding: 14px 30px;
     font-size: 15px;
@@ -540,6 +544,10 @@ p{
     border-radius: 20px;
     padding: 2%;
 }
+#number::selection{
+    background: #001c40;
+    color: #ffd43b;
+}
 #phone{
     padding: 14px 30px;
     font-size: 15px;
@@ -557,7 +565,7 @@ p{
     color: #001c40;
     border: #001c40 1px solid;
 }
-
+/* Some media queries for handeling the responsiveness */
 @media (max-width: 925px){
     .contain{
         flex-direction: column;
