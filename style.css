@@ -288,11 +288,11 @@ p{
 }
 .txtcontent{
     background: #ffd43b;
-    height: 250px;
-    margin-top: 3%;
+    height: 200px;
     margin: 20px;
     margin-left: 20px;
     border-radius: 10px;
+    position: relative;
 }
 .pragraph{
     animation: animate 3.8s;
@@ -300,9 +300,12 @@ p{
 }
 #txt{
     color: #001c40;
-    padding: 20px 30px;
-    font-size: 17px;
-    padding-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 2%;
+    left: 2%;
 }
 #txt::selection{
     color: #ffd43b;
@@ -347,7 +350,15 @@ p{
         padding-top: 75px;
     }
 }
+@media (max-width: 1200px){
+    #txt{
+        position: static;
+    }
+}
 @media (max-width:800px){
+    .txtcontent{
+        height: 260px;
+    }
     .About{
         height: 580px;
     }
