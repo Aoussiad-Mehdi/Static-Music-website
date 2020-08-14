@@ -10,9 +10,10 @@ const text = [
     '********************'
 ];
 const num = [
-    '0623232245',
+    '0694785913',
     '**********'
 ];
+
 // We use this to loop over text and num arrays. 
 var counter = 0;
 
