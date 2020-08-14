@@ -173,7 +173,7 @@ h1{
 }
 p{
     color: white;
-    font-size: 16px;
+    font-size: 19px;
     letter-spacing: 0.5px;
     z-index: -1;
 }
@@ -186,6 +186,7 @@ p{
     background: #ffd43b;
     color: #001c40;
     transition: .4s ease;
+    border-radius: 30px;
     margin-top: 70px;
 }
 .Homebtn:hover{
@@ -433,11 +434,6 @@ p{
     border-radius: 50%;
     margin-left: 5%;
     transition: .3s ease;
-    border: #ffd43b 1px solid;
-}
-#serviceimg:hover{
-    border: none;
-    transform: scale(1.1);
 }
 #headline{
     text-align: center;
@@ -506,7 +502,7 @@ p{
     background: #ffd43b;
     width: 35%;
     height: 20%;
-    padding: 1% 2%;
+    padding: 20px;
     margin-left: 0;
     padding-top: 2%;
     border-radius: 20px;
@@ -515,6 +511,7 @@ p{
     color: #001c40;
     font-family: sans-serif;
     text-align: center;
+    font-size: 16px;
 }
 #contactxt::selection{
     background: #001c40;
