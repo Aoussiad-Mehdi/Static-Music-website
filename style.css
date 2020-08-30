@@ -155,10 +155,10 @@ h1{
 .title{
     color: #ffd43b;
     font-family: sans-serif;
-    font-weight: 900;
-    font-size: 90px;
+    font-weight: 700;
+    font-size: 70px;
     text-transform: uppercase;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-left: 2%;  
     animation: animate 3.3s;  
 }
